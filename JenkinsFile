@@ -11,7 +11,6 @@ node{
   }
   
   stage('Email Notification'){
-  mail bcc: '', body: 'Hola este es un mensaje de Jenkins', cc: '', from: '', replyTo: '', subject: 'Jenkins job', to: 'abdias.morales03@gmail.com'
   
   }
   
