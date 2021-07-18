@@ -1,0 +1,11 @@
+node{
+  
+  stage('SCM Checkout') {
+  git 'https://github.com/Abdias03/login-logout-spring-security.git'
+  }
+  
+  stage('Compile-Package'){
+  sh 'mvn package'
+  }
+  
+}
