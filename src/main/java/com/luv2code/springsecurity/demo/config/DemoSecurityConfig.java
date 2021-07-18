@@ -26,6 +26,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		.withUser(users.username("susan").password("test123").roles("ADMIN"))
 		.withUser(users.username("abdias").password("123").roles("ADMIN"));
 		
+		//add new comment
+		
 	}
 
 	@Override
