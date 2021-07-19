@@ -14,7 +14,7 @@
     checkout scm
   }
   stage('SonarQube Analysis') {
-    def mvn = tool 'Default Maven';
+    def mvnHome = tool name: 'maven-3', type: 'maven'
     withSonarQubeEnv() {
       sh "${mvn}/bin/mvn sonar:sonar"
     }
