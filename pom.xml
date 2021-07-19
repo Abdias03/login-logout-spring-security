@@ -15,6 +15,7 @@
 		<springsecurity.version>5.0.0.RELEASE</springsecurity.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<sonar.projectKey>job1</sonar.projectKey>
 	</properties>
 
 	<dependencies>
