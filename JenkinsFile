@@ -10,14 +10,4 @@
     sh "${mvnHome}/bin/mvn package"
   }
   
-  stage('SCM') {
-    checkout scm
-  }
-  stage('SonarQube Analysis') {
-    def mvnHome = tool name: 'maven-3', type: 'maven'
-    withSonarQubeEnv() {
-      sh "${mvn}/bin/mvn sonar:sonar"
-    }
-  }
-  
 }
