@@ -1,13 +1,17 @@
- node{
+node{
   
   stage('SCM Checkout') {
   git 'https://github.com/Abdias03/login-logout-spring-security.git'
   }
   
   stage('Compile-Package'){
-    get maven home path
-    def mvnHome = tool name: 'maven-3', type: 'maven'
-    sh "${mvnHome}/bin/mvn package"
+  get maven home path
+  def mvnHome = tool name: 'maven-3', type: 'maven'
+   sh "${mvnHome}/bin/mvn package"
+  }
+  
+  stage('Email Notification'){
+  
   }
   
 }
