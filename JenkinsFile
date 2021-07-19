@@ -10,8 +10,4 @@ node{
    sh "${mvnHome}/bin/mvn package"
   }
   
-  stage('Email Notification'){
-  
-  }
-  
 }
